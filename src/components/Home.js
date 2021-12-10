@@ -1,4 +1,5 @@
 import Animation from './Animation'
+import ProjectsLink from './ProjectsLink'
 
 import React, { useState, useEffect } from 'react'
 
@@ -19,13 +20,13 @@ const Home = () => {
   useEffect(() => {
     setTimeout(() => {
       setSpinning(false)
-    }, 4000)
+    }, 3500)
   }, [])
 
   useEffect(() => {
     setTimeout(() => {
       setTitle(true)
-    }, 4000)
+    }, 3500)
   }, [])
 
   const [spinning, setSpinning] = useState(true)
@@ -33,32 +34,35 @@ const Home = () => {
 
   return (
     <>
-    <main className="flex-column">
-      {title && <section className="title">
-        <div className="img-container">
-
-        </div>
-        <h1>Michael Fares</h1>
-        <h3>Web Developer</h3>
-        <div className="icon-row">
-        <a href="https://www.linkedin.com/in/michael-fares-52613960/" target="blank">
-        <FontAwesomeIcon className="icon" icon={faLinkedin} size="2x"/>
-        </a>
-        <a href="https://github.com/Michael-Fares" target="blank">
-        <FontAwesomeIcon className="icon" icon={faGithubSquare} size="2x"/>
-        </a>
-        <a href="https://www.instagram.com/therealmjfares/" target="blank">
-        <FontAwesomeIcon className="icon" icon={faInstagramSquare} size="2x"/>
-        </a>
-        <a href="https://www.youtube.com/channel/UCuWqeRDlqAj-MFiFrf3xyqg" target="blank">
-        <FontAwesomeIcon className="icon" icon={faYoutubeSquare} size="2x"/>
-        </a>
-        <a href="mailto:mjfares@gmail.com">
-        <FontAwesomeIcon className="icon" icon={faEnvelopeSquare} size="2x"/>
-        </a>
-       
-
-        </div>
+    <main className="home-main">
+      {title && 
+          <section className="title">
+            <div className="star-row">
+              <div className="img-container">
+            </div>
+            <div className="flex-column">
+              <h1 className="myname">Michael Fares</h1>
+              <h3 className="myname-subtitle">Web Developer</h3>
+              <div className="icon-row">
+                  <a href="https://www.linkedin.com/in/michael-fares-52613960/" target="blank">
+                  <FontAwesomeIcon className="icon" icon={faLinkedin} size="3x"/>
+                  </a>
+                  <a href="https://github.com/Michael-Fares" target="blank">
+                  <FontAwesomeIcon className="icon" icon={faGithubSquare} size="3x"/>
+                  </a>
+                  <a href="https://www.instagram.com/therealmjfares/" target="blank">
+                  <FontAwesomeIcon className="icon" icon={faInstagramSquare} size="3x"/>
+                  </a>
+                  <a href="https://www.youtube.com/channel/UCuWqeRDlqAj-MFiFrf3xyqg" target="blank">
+                  <FontAwesomeIcon className="icon" icon={faYoutubeSquare} size="3x"/>
+                  </a>
+                  <a href="mailto:mjfares@gmail.com">
+                  <FontAwesomeIcon className="icon" icon={faEnvelopeSquare} size="3x"/>
+                  </a>
+                </div>
+              </div>
+          </div>
+          <ProjectsLink />
       </section>}
       {spinning && <Animation />}
     </main>
