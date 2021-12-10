@@ -1,3 +1,4 @@
+
 .flex-column {
   display: flex;
   flex-direction: column;
@@ -216,6 +217,15 @@ transition: 1s ease transform;
   }
 }
 
+@-webkit-keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
 .home-main {
   height: 90vh;
   display: flex;
@@ -237,9 +247,5 @@ transition: 1s ease transform;
   }
 }
 
-@media all and (max-width: 800px) {
-  /* .home-main {
-    align-items: flex-start;
-  } */
-}
+
 
