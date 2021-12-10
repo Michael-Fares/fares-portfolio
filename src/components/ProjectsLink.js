@@ -1,14 +1,15 @@
 import React from 'react'
 
+
 const ProjectsLink = () => {
   return (
 
-<div class="projects-link">
-  <h1>Portfolio</h1>
-  <div class="rotating-star">
-      <div class="star-square">
+<div className="projects-link">
+    <h1>Portfolio</h1>
+  <div className="rotating-star">
+      <div className="star-square">
       </div>
-      <div class="star-square transform"></div>
+      <div className="star-square transform"></div>
     </div>
   </div>
   )

@@ -147,7 +147,7 @@
   background-size: cover;
   background-position: 80%;
   border-radius: 10%;
-  /* margin: 0.75rem auto; */
+  margin-right: 0.75rem;
   box-shadow: 1px 1px 10px rgba(255,255,255, 0.5);
 }
 .myname {
@@ -173,14 +173,23 @@ body {
   justify-content: center;
   align-items: center;
   height: 100px;
-  color: white;
   margin-top: 2rem;
   cursor: pointer;
 }
 
 .projects-link > h1 {
 position: absolute;
+color: white;
+z-index: 1;
+text-shadow: 1px 1px 10px rgba(255,255,255, 0.5);
+transition: 1s ease transform;
 }
+
+.projects-link > h1:hover {
+  position: absolute;
+  transform: scale(2);
+  }
+  
 
 
 .rotating-star {
@@ -194,7 +203,7 @@ position: absolute;
 .star-square {
   width: 100px;
   height: 100px;
-  border: 1px solid;
+  border: 2px solid;
   position: absolute;
 }
 
@@ -213,3 +222,24 @@ position: absolute;
   justify-content: center;
   align-items: center;
 }
+
+@media all and (max-width: 600px) {
+  .star-row {
+    flex-direction: column;  
+  }
+  .img-container {
+    height: 150px;
+    width: 150px;
+    margin-bottom: 1rem;
+  }
+  .home-main {
+    align-items: flex-start;
+  }
+}
+
+@media all and (max-width: 800px) {
+  /* .home-main {
+    align-items: flex-start;
+  } */
+}
+
