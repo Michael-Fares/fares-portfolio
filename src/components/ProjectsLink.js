@@ -5,7 +5,7 @@ const ProjectsLink = () => {
   return (
 
 <div className="projects-link">
-    <h1>Portfolio</h1>
+    <h1>PORTFOLIO</h1>
   <div className="rotating-star">
       <div className="star-square">
       </div>
