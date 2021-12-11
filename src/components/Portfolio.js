@@ -3,7 +3,6 @@ import axios from 'axios'
 
 
 
-
 const Portolio = () => {
 const [repos, setRepos] = useState([])
 
@@ -24,6 +23,7 @@ return (
       return (
         <li key={repo.id}>
           <p>{repo.name}</p>
+          <img className="repo-image" src={`${process.env.PUBLIC_URL}/${repo.name}.png`} alt={repo.name}/>
           <div className="repo-chip-container">
             {repo.topics.map(topic => {
               return (<span className="repo-chip">{topic}</span>)
