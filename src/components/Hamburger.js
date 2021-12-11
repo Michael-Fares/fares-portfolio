@@ -1,5 +1,5 @@
-import React, { useCallback, useState } from 'react'
-
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Hamburger = () => {
 
@@ -11,13 +11,14 @@ const Hamburger = () => {
 
   return (
   <>
-  <button onClick={handleClick} class="hamburger" id="hamburger">
-    <div class="line none"></div>
+  <button onClick={handleClick} className={isOpen? "hamburger open" : "hamburger"}>
+    <div></div>
   </button>
   {isOpen && 
  
     <nav className="hamburger-links">
       <ul className="links-box">
+        <li><Link to="/">HOME</Link></li>
         <li>ABOUT</li>
         <li>RESUME</li>
         <li><a href="https://michael-fares.medium.com/" target="blank">BLOG</a></li>

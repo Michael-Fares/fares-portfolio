@@ -15,6 +15,9 @@ import {
   faEnvelopeSquare
 } from "@fortawesome/free-solid-svg-icons";
 
+import { Link } from 'react-router-dom'
+
+
 const Home = () => {
 
   useEffect(() => {
@@ -62,7 +65,7 @@ const Home = () => {
                 </div>
               </div>
           </div>
-          <ProjectsLink />
+          <Link to="/portfolio" style={{color: "white"}}><ProjectsLink /></Link>
       </section>}
       {spinning && <Animation />}
     </main>

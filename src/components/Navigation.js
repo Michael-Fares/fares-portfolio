@@ -1,5 +1,4 @@
 import React from 'react';
-import Hamburger from './Hamburger'
 
 const Navigation = () => {
   return (
