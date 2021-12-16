@@ -18,11 +18,16 @@ useEffect(() => {
 
 return (
 <main>
-  <ul className="project-list" style={{listStyle: "none", margin: 0}}>
+  <ul className="project-list" style={{listStyle: "none", marginTop: "1rem"}}>
     {repos.map(repo => {
       return (
         <li key={repo.id} className="repo-card">
           <p>{repo.name}</p>
+          <div className="repo-card-top-row">
+            <a href={repo.html_url} target="blank">SEE CODE</a>
+            <a href={repo.homepage} target="blank">VISIT SITE</a>
+          </div>
+          
           <img className="repo-image" src={`${process.env.PUBLIC_URL}/${repo.name}.png`} alt={repo.name}/>
             <p className="repo-description">{repo.description}</p>
           <div className="repo-chip-container">

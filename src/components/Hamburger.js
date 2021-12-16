@@ -18,9 +18,9 @@ const Hamburger = () => {
  
     <nav className="hamburger-links">
       <ul className="links-box">
-        <li><Link to="/">HOME</Link></li>
-        <li>ABOUT</li>
-        <li>RESUME</li>
+        <li onClick={handleClick}><Link to="/">HOME</Link></li>
+        <li onClick={handleClick}>ABOUT</li>
+        <li onClick={handleClick}>RESUME</li>
         <li><a href="https://michael-fares.medium.com/" target="blank">BLOG</a></li>
       </ul>
     </nav>
