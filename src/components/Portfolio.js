@@ -10,20 +10,21 @@ useEffect(() => {
 
   axios.get(`https://api.github.com/users/michael-fares/repos?per_page=100`)
   .then((res) => {
-    const filteredRepos = res.data.filter(repo => repo.homepage)
+    const filteredRepos = res.data.filter(repo => repo.homepage && repo.description)
     setRepos(filteredRepos)
   })
 
 },[])
 
 return (
-<main className="title">
-  <ul style={{listStyle: "none"}}>
+<main>
+  <ul className="project-list" style={{listStyle: "none", margin: 0}}>
     {repos.map(repo => {
       return (
-        <li key={repo.id}>
+        <li key={repo.id} className="repo-card">
           <p>{repo.name}</p>
           <img className="repo-image" src={`${process.env.PUBLIC_URL}/${repo.name}.png`} alt={repo.name}/>
+            <p className="repo-description">{repo.description}</p>
           <div className="repo-chip-container">
             {repo.topics.map(topic => {
               return (<span className="repo-chip">{topic}</span>)

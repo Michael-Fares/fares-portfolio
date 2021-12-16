@@ -307,9 +307,39 @@ margin: 0;
 }
 
 /* PORTFOLIO */
-
+.project-list {
+  color: white;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.repo-card {
+  margin: 0.5rem;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 5%;
+}
 .repo-image {
   height: 200px;
+  margin: 0 auto;
+}
+.repo-description {
+  max-width: 400px;
+}
+
+.repo-chip {
+  background-color: white;
+  color: #272121;
+  padding: 0.25rem 0.5rem;
+  margin: 0.25rem;
+  border-radius: 900px;
+  display: inline-block;
 }
 
 @media all and (max-width: 600px) {
@@ -324,7 +354,16 @@ margin: 0;
   .home-main {
     align-items: flex-start;
   }
-
+  /* Portfolio */
+  .project-list {
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .repo-card {
+    max-width: 375px;
+  }
+ 
 }
 
 
