@@ -378,6 +378,27 @@ animation: pulse 2s infinite forwards;
   display: inline-block;
 }
 
+
+/* About */
+.about-main {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  animation: title 1s forwards;
+}
+.aboutme-img {
+  height: 500px;
+  box-shadow: 0 0 3px 3px rgba(255,255,255, 0.5);
+}
+.about-content {
+  color: whitesmoke;
+  margin: 2rem;
+}
+
+.about-content p {
+  margin: 2rem;
+  line-height: 1.5rem;
+}
+
 @media all and (max-width: 600px) {
   .star-row {
     flex-direction: column;  
@@ -402,7 +423,19 @@ animation: pulse 2s infinite forwards;
   .repo-image {
     height: 145px;
   }
-
+  .about-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5 1fr;
+  }
+  .about-content h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    }
+  .aboutme-img {
+    height: 250px;
+    margin: 0 auto;
+  }
 }
 
 
