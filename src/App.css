@@ -423,6 +423,7 @@ animation: pulse 2s infinite forwards;
   .repo-image {
     height: 145px;
   }
+  /* About */
   .about-main {
     display: grid;
     grid-template-columns: 1fr;

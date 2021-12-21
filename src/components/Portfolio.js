@@ -8,7 +8,7 @@ const [repos, setRepos] = useState([])
 
 useEffect(() => {
 
-  axios.get(`https://api.github.com/users/michael-fares/repos?per_page=100`)
+  axios.get(`https://api.github.com/users/michael-fares/repos?sort=created&direction=desc&per_page=100`)
   .then((res) => {
     const filteredRepos = res.data.filter(repo => repo.homepage && repo.description)
     setRepos(filteredRepos)
