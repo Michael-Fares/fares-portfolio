@@ -14,8 +14,8 @@ const Hamburger = () => {
   <button onClick={handleClick} className={isOpen? "hamburger open" : "hamburger"}>
     <div></div>
   </button>
-  {isOpen && 
  
+ {isOpen && 
     <nav className="hamburger-links">
       <ul className="links-box">
         <li onClick={handleClick}><Link to="/">HOME</Link></li>
@@ -25,7 +25,7 @@ const Hamburger = () => {
       </ul>
     </nav>
 
-  }
+ }
   </>
 
   )

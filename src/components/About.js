@@ -1,11 +1,10 @@
-import react from 'react';
 import aboutme from '../aboutme.jpeg'
 
 const About = () => {
   
   return (
   <main className="about-main">
-      <img className="aboutme-img" src={aboutme} alt="A picture of Michael Fares" />
+      <img className="aboutme-img" src={aboutme} alt="Michael Fares" />
     <div className="about-content">
     <h1 className="myname">Hi, I'm Michael Fares.</h1>
     <p>

@@ -237,7 +237,7 @@ animation: pulse 2s infinite forwards;
   }
 }
 .home-main {
-  height: 90vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -269,7 +269,21 @@ animation: pulse 2s infinite forwards;
   height: 0.25rem;
   width: 3rem;
   margin: 0.5rem 0;
+  transition: 0.2s ease all;
 }
+
+
+.open:before {
+  transform: rotate(-45deg) translate(-35%);
+}
+.open div {
+  opacity: 0;
+}
+.open:after {
+  transform: rotate(45deg) translate(-35%);
+}
+
+
 .hamburger-links {
   display: flex;
   justify-content: center;
@@ -279,9 +293,10 @@ animation: pulse 2s infinite forwards;
   top: 1;
   right: 0;
   animation: menu 0.2s forwards;
-  height: 100vh;
   background-color: white;
+  height: 100vh;
 }
+
 .links-box {
   list-style: none;
 }
@@ -305,10 +320,12 @@ animation: pulse 2s infinite forwards;
 
 @keyframes menu {
   from {
+    opacity: 0;
     width: 0;
   }
   to {
     width: 10rem;
+    opacity: 1;
   }
 }
 
