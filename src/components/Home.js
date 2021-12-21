@@ -65,7 +65,7 @@ const Home = () => {
                 </div>
               </div>
           </div>
-          <Link to="/portfolio" style={{color: "white"}}><ProjectsLink /></Link>
+          <ProjectsLink />
       </section>}
       {spinning && <Animation />}
     </main>
