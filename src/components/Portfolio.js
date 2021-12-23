@@ -5,6 +5,7 @@ import axios from 'axios'
 
 const Portolio = () => {
 const [repos, setRepos] = useState([])
+const [loading, setLoading] = useState(true)
 
 useEffect(() => {
 
@@ -12,12 +13,21 @@ useEffect(() => {
   .then((res) => {
     const filteredRepos = res.data.filter(repo => repo.homepage && repo.description)
     setRepos(filteredRepos)
+    setLoading(false)
   })
 
 },[])
 
 return (
 <main>
+{loading ? 
+  <div className="home-main">
+   <div className="rotating-star loading">
+      <div className="star-square"></div>
+      <div className="star-square transform"></div>
+    </div>
+   </div> 
+    :
   <ul className="project-list" style={{listStyle: "none", marginTop: "1rem"}}>
     {repos.map(repo => {
       return (
@@ -39,6 +49,7 @@ return (
       )
     })}
   </ul>
+}
   </main>
   )
 }

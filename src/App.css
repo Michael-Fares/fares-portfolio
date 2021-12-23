@@ -92,11 +92,13 @@ body {
 .nav > h1 {
   margin-left: 1rem;
   color: #272121;
-  font-family: 'Londrina Solid', cursive;
-  letter-spacing: 1.2px;
   text-transform: uppercase;
 }
-
+.nav .pathname {
+  color: #443737;
+  text-transform: lowercase;
+  margin-left: 1rem;
+}
 .title {
   text-align: center;
   animation-name: title;
@@ -301,6 +303,7 @@ animation: pulse 2s infinite forwards;
   animation: menu 0.2s forwards;
   background-color: white;
   height: 100vh;
+  box-shadow: 5px 5px 10px rgba(0,0,0, 0.9);
 }
 
 .links-box {
@@ -318,7 +321,9 @@ animation: pulse 2s infinite forwards;
  text-shadow: 0  5px 10px #212121;
  color: #443737;
 }
-
+.links-box .last-link {
+  color:#443737;
+}
 .hamburger-links a {
   color: inherit;
   text-decoration: none;
@@ -336,13 +341,16 @@ animation: pulse 2s infinite forwards;
 }
 
 /* PORTFOLIO */
+.loading {
+  color: white;
+  animation-duration: 2s;
+}
 .project-list {
   color: white;
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-content: center;
-
 }
 .repo-card {
   margin: 0.5rem;
@@ -390,6 +398,7 @@ animation: pulse 2s infinite forwards;
 }
 .repo-description {
   max-width: 400px;
+  margin: 0.5rem 0;
 }
 
 .repo-chip {
@@ -528,11 +537,16 @@ animation: pulse 2s infinite forwards;
   .home-main {
     align-items: flex-start;
   }
-  
+  .pathname-flex {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media all and (max-width: 800px) {
-
+  .shape-grid {
+    margin-top: 5rem;
+  }
   /* Portfolio */
   .project-list {
     grid-template-columns: 1fr;
@@ -583,6 +597,9 @@ animation: pulse 2s infinite forwards;
   }
   .contact-icon {
     transform: scale(0.75);
+  }
+  .contact-info div {
+    margin: 0;
   }
 }
 
