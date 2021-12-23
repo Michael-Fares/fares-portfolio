@@ -429,6 +429,7 @@ animation: pulse 2s infinite forwards;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   margin: 1rem;
+  animation: title 1s forwards;
 }
 .resume-img {
   background-image: url('./resume-img.jpeg');
