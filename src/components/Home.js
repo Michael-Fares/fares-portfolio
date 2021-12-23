@@ -1,6 +1,7 @@
 import Animation from './Animation'
 import ProjectsLink from './ProjectsLink'
 
+import { useLocation } from 'react-router-dom'
 import React, { useState, useEffect } from 'react'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -14,7 +15,6 @@ import {
 import {
   faEnvelopeSquare
 } from "@fortawesome/free-solid-svg-icons";
-
 
 const Home = () => {
 
@@ -32,7 +32,7 @@ const Home = () => {
 
   const [spinning, setSpinning] = useState(true)
   const [title, setTitle] = useState(false)
-
+ 
   return (
     <>
     <main className="home-main">

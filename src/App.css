@@ -1,3 +1,4 @@
+
 body {
   font-family: 'Lato', sans-serif;
   background-color: #272121;
@@ -11,6 +12,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .shape-grid {
   display: grid;
   grid-gap: 0;
@@ -403,7 +405,7 @@ animation: pulse 2s infinite forwards;
   animation: title 1s forwards;
 }
 .aboutme-img {
-  height: 500px;
+  height: 600px;
   box-shadow: 0 0 3px 3px rgba(255,255,255, 0.5);
 }
 .about-content {
@@ -415,6 +417,60 @@ animation: pulse 2s infinite forwards;
   margin: 2rem;
   line-height: 1.5rem;
 }
+/* RESUME */
+
+.resume-main h1, h2, h3, h4, h5 h6, p {
+  margin: 0;
+}
+
+.resume-main {
+  display: grid;
+  grid-template-rows: 0.5fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  margin: 1rem;
+}
+.resume-img {
+  background-image: url('./resume-img.jpeg');
+  background-position: top;
+}
+.education {
+  grid-column: 1/ span 2;
+}
+
+.education div {
+  margin: 1rem;
+}
+.education h4 {
+  margin: 0.25rem 0;
+}
+.resume-heading {
+  font-family: 'Londrina Solid', cursive;
+  color: #98ded9;
+  margin: 0.5rem;
+  text-shadow: 1px 1px 10px rgba(255,255,255, 0.5);
+  letter-spacing: 0.25rem;
+  text-align: center;
+}
+.resume-section {
+  color: white;
+  margin: 0;
+}
+.flex-row-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.flex-row-wrap li {
+  margin: 0.25rem;
+  padding: 0.5rem;
+  background-color: white;
+  color: #212121;
+  font-weight: bold;
+  border-radius: 1000px;
+}
+
 
 @media all and (max-width: 600px) {
   .star-row {
@@ -428,7 +484,19 @@ animation: pulse 2s infinite forwards;
   .home-main {
     align-items: flex-start;
   }
-
+  .resume-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+  }
+  .flex-row-wrap li {
+    font-size: 0.75rem;
+  }
+  .experience li {
+    font-size: 0.5rem;
+  }
 }
 
 @media all and (max-width: 800px) {
