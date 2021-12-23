@@ -87,10 +87,14 @@ body {
   background-color:#98ded9;
   overflow: hidden;
   box-shadow: 1px 1px 10px white;
+  z-index: 1;
 }
 .nav > h1 {
   margin-left: 1rem;
   color: #272121;
+  font-family: 'Londrina Solid', cursive;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
 }
 
 .title {
@@ -422,29 +426,63 @@ animation: pulse 2s infinite forwards;
 .resume-main h1, h2, h3, h4, h5 h6, p {
   margin: 0;
 }
-
+.resume-main h3 {
+  font-size: 1.5rem;
+}
 .resume-main {
   display: grid;
   grid-template-rows: 0.5fr 1fr 1fr;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
   justify-items: center;
-  margin: 1rem;
   animation: title 1s forwards;
 }
 .resume-img {
-  background-image: url('./resume-img.jpeg');
-  background-position: top;
+  background-image: url('./resume-img.jpg');
+  background-position: 0 540px;
+  width: 600px;
+  height: 240px;
+  background-size: cover;
+  box-shadow: 1px 1px 10px rgba(255,255,255, 0.5);
 }
+
+.contact-info {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+.contact-info h4 {
+  margin: 0.5rem;
+  font-size: 1.5rem;
+}
+.contact-info div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1rem;
+  width: 100%;
+}
+.contact-icon {
+  color: #98ded9;
+  margin: 0 0.75rem;
+}
+
 .education {
   grid-column: 1/ span 2;
 }
 
 .education div {
-  margin: 1rem;
+  margin: 0.5rem 5rem;
 }
 .education h4 {
   margin: 0.25rem 0;
 }
+.degrees {
+  display: flex;
+  justify-content: space-between;
+}
+
 .resume-heading {
   font-family: 'Londrina Solid', cursive;
   color: #98ded9;
@@ -452,9 +490,14 @@ animation: pulse 2s infinite forwards;
   text-shadow: 1px 1px 10px rgba(255,255,255, 0.5);
   letter-spacing: 0.25rem;
   text-align: center;
+  text-transform: uppercase;
 }
 .resume-section {
   color: white;
+  margin: 0 0.5rem;
+}
+.resume-image-align {
+  justify-self: stretch;
   margin: 0;
 }
 .flex-row-wrap {
@@ -485,19 +528,7 @@ animation: pulse 2s infinite forwards;
   .home-main {
     align-items: flex-start;
   }
-  .resume-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0.5rem;
-  }
-  .flex-row-wrap li {
-    font-size: 0.75rem;
-  }
-  .experience li {
-    font-size: 0.5rem;
-  }
+  
 }
 
 @media all and (max-width: 800px) {
@@ -522,6 +553,36 @@ animation: pulse 2s infinite forwards;
   .aboutme-img {
     height: 250px;
     margin: 0 auto;
+  }
+  .resume-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .education {
+    grid-column: auto;
+  }
+  .flex-row-wrap li {
+    font-size: 0.75rem;
+  }
+  .experience li {
+    font-size: 0.75rem;
+  }
+  .education div {
+    margin: 1rem 0;
+  }
+  .degrees {
+    display: unset;
+  }
+  .resume-main h3, .contact-info h4 {
+    font-size: unset;
+  }
+  .resume-img {
+    height: 200px;
+  }
+  .contact-icon {
+    transform: scale(0.75);
   }
 }
 

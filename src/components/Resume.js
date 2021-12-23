@@ -1,16 +1,29 @@
-import resumePic from '../resume-img.jpeg'
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faEnvelope,
+  faPhone
+} from "@fortawesome/free-solid-svg-icons";
 
 const Resume = () => {
   
   return (
   <main className="resume-main">
-   <section className="resume-section">
-      <div className="img-container resume-img"></div>
+   <section className="resume-section resume-image-align">
+      <div className="resume-img"></div>
    </section> 
-   <section className="resume-section">
-    <h2 className="resume-heading">Contact</h2>
-    <h4>email: mjfares@gmail.com</h4>
-    <h4>phone: 703-244-0370</h4>
+   <section className="resume-section contact">
+   <h2 className="resume-heading">Contact</h2>
+    <div className="contact-info">
+      <div>
+        <FontAwesomeIcon className="contact-icon" icon={faEnvelope} size="3x"/>
+        <h4>mjfares@gmail.com</h4>
+      </div>
+      <div>
+        <FontAwesomeIcon className="contact-icon" icon={faPhone} size="3x"/>
+        <h4>703-244-0370</h4>
+      </div>
+    </div>
    </section>
    <section className="resume-section">
     <h2 className="resume-heading">Skills</h2>
@@ -24,7 +37,7 @@ const Resume = () => {
       <li>Bootstrap</li>
       <li>Node</li>
       <li>Express</li>
-      <li>Sql</li>
+      <li>SQL</li>
       <li>REST APIs</li>
       <li>Testing</li>
       <li>NPM / Yarn</li>
@@ -36,8 +49,8 @@ const Resume = () => {
       <li>Public Speaking</li>
     </ul>
    </section>
-   <section className="resume-section">
-    <h2 className="resume-heading experience">Experience</h2>
+   <section className="resume-section experience">
+    <h2 className="resume-heading">Experience</h2>
     <div>
       <h3>Freelance Web Developer</h3>
       <h4><i>2021 - Present</i></h4>
@@ -57,14 +70,16 @@ const Resume = () => {
    </section>
    <section className="resume-section education">
     <h2 className="resume-heading">Education</h2>
+    <div className="degrees">
       <div>
           <h3> Austin Coding Academy Bootcamp</h3>
           <h4>Full Stack Web Development | <i>Dec 2021</i></h4>
         </div>
         <div>
           <h3>University of Texas at Austin</h3>
-          <h4>M.A. | <i>May 2012</i></h4>
+          <h4>MA, Arabic Language | <i>May 2012</i></h4>
         </div>
+      </div>
    </section>
   </main>
     )
