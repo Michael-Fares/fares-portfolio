@@ -253,7 +253,7 @@ animation: pulse 2s infinite forwards;
 
 .hamburger-links {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   z-index: 1;
   position: absolute;
@@ -261,15 +261,16 @@ animation: pulse 2s infinite forwards;
   right: 0;
   animation: menu 0.2s forwards;
   background-color: white;
-  height: 100vh;
+  height: 80vh;
   box-shadow: 0 0 10px 3px rgba(255,255,255, 0.5);
 }
 
 .links-box {
   list-style: none;
+  overflow: hidden;
 }
 .links-box li {
-  margin: 1.5rem;
+  margin: 1rem 1rem 0 0.25rem;
   transition: ease-in-out all 0.3s;
   font-weight: bold;
   color: inherit;

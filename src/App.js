@@ -5,19 +5,15 @@ import {
 } from "react-router-dom";
 
 import Navigation from './components/Navigation'
-import Hamburger from './components/Hamburger'
 
 
 
 function App() {
   return (
-   
   <BrowserRouter>
     <Navigation />
-    <Hamburger />
     <Router />
   </BrowserRouter>
-    
   );
 }
 

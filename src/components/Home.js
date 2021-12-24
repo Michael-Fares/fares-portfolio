@@ -60,7 +60,7 @@ const Home = () => {
               </div>
           </div>
           <ProjectsLink />
-      </section>}
+      </section>
       {spinning && <Animation />}
     </main>
     </>
