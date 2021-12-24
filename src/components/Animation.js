@@ -2,72 +2,12 @@ import React from 'react'
 
 const Animation = () => {
   return (
-  <div className="shape-grid">
-    <div className="shape-container">
-      <div className="square"></div>
-      <div className="square transform"></div>
+  
+    <div className="rotating-star loading absolute">
+      <div className="star-square initial-animation"></div>
+      <div className="star-square initial-animation transform"></div>
     </div>
-    <div className="shape-container">
-      <div className="square"></div>
-      <div className="square transform"></div>
-    </div>
-    <div className="shape-container">
-      <div className="square"></div>
-      <div className="square transform"></div>
-    </div>
-    <div className="shape-container">
-      <div className="square"></div>
-      <div className="square transform"></div>
-    </div>
-    <div className="shape-container">
-      <div className="square"></div>
-      <div className="square transform"></div>
-    </div>
-    <div className="shape-container">
-      <div className="square"></div>
-      <div className="square transform"></div>
-    </div>
-    <div className="shape-container">
-      <div className="square"></div>
-      <div className="square transform"></div>
-    </div>
-    <div className="shape-container">
-      <div className="square"></div>
-      <div className="square transform"></div>
-    </div>
-    <div className="shape-container">
-      <div className="square"></div>
-      <div className="square transform"></div>
-    </div>
-    <div className="shape-container">
-      <div className="square"></div>
-      <div className="square transform"></div>
-    </div>
-    <div className="shape-container">
-      <div className="square"></div>
-      <div className="square transform"></div>
-    </div>
-    <div className="shape-container">
-      <div className="square"></div>
-      <div className="square transform"></div>
-    </div>
-    <div className="shape-container">
-      <div className="square"></div>
-      <div className="square transform"></div>
-    </div>
-    <div className="shape-container">
-      <div className="square"></div>
-      <div className="square transform"></div>
-    </div>
-    <div className="shape-container">
-      <div className="square"></div>
-      <div className="square transform"></div>
-    </div>
-    <div className="shape-container">
-      <div className="square"></div>
-      <div className="square transform"></div>
-    </div>
-</div>
+     
   )
 }
 

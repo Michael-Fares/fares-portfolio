@@ -10,7 +10,7 @@ const Resume = () => {
   return (
   <main className="resume-main">
    <section className="resume-section resume-image-align">
-      <div className="resume-img"></div>
+      <div className="resume-img" role="img" aria-label="Michael Fares"></div>
    </section> 
    <section className="resume-section contact">
    <h2 className="resume-heading">Contact</h2>
@@ -33,6 +33,7 @@ const Resume = () => {
       <li>JavaScript</li>
       <li>Git and GitHub</li>
       <li>React</li>
+      <li>UX/UI</li>
       <li>Material UI</li>
       <li>Bootstrap</li>
       <li>Node</li>

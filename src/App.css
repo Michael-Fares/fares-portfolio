@@ -13,75 +13,34 @@ body {
   align-items: center;
 }
 
-.shape-grid {
-  display: grid;
-  grid-gap: 0;
-  grid-template-columns: repeat(4, 63px);
-  grid-template-rows: repeat(4, 63px);
-  -webkit-animation-name: flyout;
-  -webkit-animation-duration: 2s;
-  animation-name: flyout;
-  animation-duration: 0.5s;
-  -webkit-animation-delay: 3s;
-  animation-delay: 3s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  justify-content: center;
-}
-
-
-.shape-container {
-  height: 100px;
-  margin: 0;
-  transform: rotate(22.25deg);
-  -webkit-animation: spin 3s;
-  animation: spin 3s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-}
-
 .square {
   width: 50px;
   height: 50px;
   border: 1px solid #98ded9;
   position: absolute;
 }
-
-@keyframes spin {
-  from {
-    opacity: 0;
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes flyout {
-  from {
-    grid-gap: 0;
-    opacity: 1;
-  }
-  to { 
-    grid-gap: 5rem;
-    opacity: 0;
-  }
-}
-
-@-webkit-keyframes flyout {
-  from {
-    grid-gap: 0;
-    opacity: 1;
-  }
-  to {
-    grid-gap: 5rem;
-    opacity: 0;
-  }
-}
-
 .transform {
   transform: rotate(45deg);    
 }
+@keyframes flyout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: scale(3.5);
+  }
+}
+.initial-animation {
+  animation: flyout 1s forwards;
+}
+
+.absolute {
+  position: absolute;
+  z-index: -1;
+  align-self: center;
+}
+
 /* Navigation */
 .nav {
   background-color:#98ded9;
@@ -97,7 +56,7 @@ body {
 .nav .pathname {
   color: #443737;
   text-transform: lowercase;
-  margin-left: 1rem;
+  margin-left: 0.5rem;
 }
 .title {
   text-align: center;
@@ -303,7 +262,7 @@ animation: pulse 2s infinite forwards;
   animation: menu 0.2s forwards;
   background-color: white;
   height: 100vh;
-  box-shadow: 5px 5px 10px rgba(0,0,0, 0.9);
+  box-shadow: 0 0 10px 3px rgba(255,255,255, 0.5);
 }
 
 .links-box {
@@ -344,6 +303,7 @@ animation: pulse 2s infinite forwards;
 .loading {
   color: white;
   animation-duration: 2s;
+  align-self: center;
 }
 .project-list {
   color: white;
@@ -537,10 +497,13 @@ animation: pulse 2s infinite forwards;
   .home-main {
     align-items: flex-start;
   }
-  .pathname-flex {
-    display: flex;
-    flex-direction: column;
+  .nav h1, .pathname {
+    font-size: 1.25rem;
   }
+  button.hamburger {
+    padding: 0.5rem 0.5rem 0 0;
+  }
+ 
 }
 
 @media all and (max-width: 800px) {
@@ -603,4 +566,9 @@ animation: pulse 2s infinite forwards;
   }
 }
 
-
+@media all and (max-width: 320px) {
+  .nav h1, .pathname {
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+  }
+}

@@ -16,7 +16,7 @@ const About = () => {
       
       <br /> <br />  
       
-      I have over 10 years' previous experience as a professor and have also worked on a variety of administrative teams in higher education, I pride myself on my ability to both learn new information quickly and to share it clearly with others. 
+      With over 10 years' previous experience as a professor and having also worked on a variety of administrative teams in higher education, I pride myself on my ability to both learn new information quickly and to share it clearly with others. 
       
       <br /> <br /> 
       

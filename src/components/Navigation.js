@@ -6,7 +6,7 @@ const Navigation = () => {
   console.log(location)
   return (
     <nav className="nav">
-      <h1 className="pathname-flex">Michael Fares <span className="pathname">{location.pathname === "/" ? "" :` > ${location.pathname.slice(1, location.pathname.length)}`}</span></h1>
+      <h1>Michael Fares <span className="pathname">{location.pathname === "/" ? "" :`> ${location.pathname.slice(1, location.pathname.length)}`}</span></h1>
     </nav>
   )
 }

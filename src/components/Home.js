@@ -21,25 +21,21 @@ const Home = () => {
   useEffect(() => {
     setTimeout(() => {
       setSpinning(false)
-    }, 3500)
+    }, 1000)
   }, [])
 
-  useEffect(() => {
-    setTimeout(() => {
-      setTitle(true)
-    }, 3500)
-  }, [])
+
 
   const [spinning, setSpinning] = useState(true)
-  const [title, setTitle] = useState(false)
+  
  
   return (
     <>
     <main className="home-main">
-      {title && 
+       
           <section className="title">
             <div className="star-row">
-              <div className="img-container">
+              <div className="img-container" role="img" aria-label="Michael Fares">
             </div>
             <div className="flex-column">
               <h1 className="myname">Michael Fares</h1>
