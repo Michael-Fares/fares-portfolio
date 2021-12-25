@@ -1,10 +1,29 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+} 
+
 
 body {
   font-family: 'Lato', sans-serif;
   background-color: #272121;
+  height: 100vh;
+  /* display: flex;
+  flex-direction: column; */
 }
-/* Animation */
 
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;  
+}
+
+/* Animation */
 
 .flex-column {
   display: flex;
@@ -111,6 +130,7 @@ body {
 }
 .icon-row > a:hover {
   color: white;
+  transform: scale(1.2);
 }
 
 .img-container {
@@ -261,16 +281,17 @@ animation: pulse 2s infinite forwards;
   right: 0;
   animation: menu 0.2s forwards;
   background-color: white;
-  height: 80vh;
+  height: fit-content;
   box-shadow: 0 0 10px 3px rgba(255,255,255, 0.5);
+  overflow: hidden;
+  padding-bottom: 1rem;
 }
 
 .links-box {
   list-style: none;
-  overflow: hidden;
 }
 .links-box li {
-  margin: 1rem 1rem 0 0.25rem;
+  margin: 1rem 0;
   transition: ease-in-out all 0.3s;
   font-weight: bold;
   color: inherit;
@@ -283,6 +304,8 @@ animation: pulse 2s infinite forwards;
 }
 .links-box .last-link {
   color:#443737;
+  border: 1px solid #443737;
+  padding: 0.25rem;
 }
 .hamburger-links a {
   color: inherit;
@@ -308,14 +331,14 @@ animation: pulse 2s infinite forwards;
 }
 .project-list {
   color: white;
-  padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-content: center;
+  margin: 0;
+  padding: 0;
 }
+
 .repo-card {
   margin: 0.5rem;
-  border: 1px solid white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -328,6 +351,7 @@ animation: pulse 2s infinite forwards;
   -webkit-animation-fill-mode: forwards;
   animation-duration: 1s;
   -webkit-animation-duration: 1s;
+  box-shadow: 1px 1px 10px rgba(255,255,255, 0.5);
 }
 .repo-card-top-row {
   display: flex;
@@ -369,6 +393,7 @@ animation: pulse 2s infinite forwards;
   margin: 0.25rem;
   border-radius: 900px;
   display: inline-block;
+  font-weight: bold;
 }
 
 
@@ -380,7 +405,7 @@ animation: pulse 2s infinite forwards;
 }
 .aboutme-img {
   height: 600px;
-  box-shadow: 0 0 3px 3px rgba(255,255,255, 0.5);
+  box-shadow: 1px 1px 10px rgba(255,255,255, 0.5);
 }
 .about-content {
   color: whitesmoke;
@@ -415,7 +440,9 @@ animation: pulse 2s infinite forwards;
   background-size: cover;
   box-shadow: 1px 1px 10px rgba(255,255,255, 0.5);
 }
-
+.contact {
+  padding-top: 1rem;
+}
 .contact-info {
  display: flex;
  flex-direction: column;

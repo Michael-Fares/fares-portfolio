@@ -33,6 +33,7 @@ const Resume = () => {
       <li>JavaScript</li>
       <li>Git and GitHub</li>
       <li>React</li>
+      <li>Redux</li>
       <li>UX/UI</li>
       <li>Material UI</li>
       <li>Bootstrap</li>
