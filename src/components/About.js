@@ -8,7 +8,7 @@ const About = () => {
     <div className="about-content">
     <h1 className="myname">Hi, I'm Michael Fares.</h1>
     <p>
-      I am an educator turned programmer based in Houston, TX. I'm half Lebanese, half American, but fully a citizen of the world. I grew up in the Middle East for most of my childhood, and have been lucky enough to to travel to many places in between here and there. 
+      I am an educator turned programmer based in Houston, TX. I'm half Lebanese, half American, but fully a citizen of the world. I grew up in the Middle East for most of my childhood, and have been lucky enough to travel to many places in between here and there. 
       
       <br /> <br /> 
       
