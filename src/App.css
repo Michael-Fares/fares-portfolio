@@ -235,10 +235,10 @@ animation: pulse 2s infinite forwards;
   position: absolute;
   top: 0;
   right: 0;
-  padding: 1rem;
   border: transparent;
   background: transparent;
   z-index: 1;
+  padding: 1rem;
 }
 
 
@@ -263,6 +263,7 @@ animation: pulse 2s infinite forwards;
 }
 .open div {
   opacity: 0;
+  transform: rotate(-225deg);
 }
 .open:after {
   transform: rotate(45deg) translate(-35%);
