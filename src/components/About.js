@@ -1,10 +1,14 @@
 import aboutme from '../aboutme.jpeg'
+import aboutme2 from '../aboutme2.jpeg'
 
 const About = () => {
   
   return (
   <main className="about-main">
-      <img className="aboutme-img" src={aboutme} alt="Michael Fares" />
+    <div className="flex-row-wrap">
+      <img className="aboutme-img-desktop" src={aboutme} alt="Michael Fares" />
+      <img className="aboutme-img-mobile" src={aboutme2} alt="Michael Fares" />
+    </div>
     <div className="about-content">
     <h1 className="myname">Hi, I'm Michael Fares.</h1>
     <p>

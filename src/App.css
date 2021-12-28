@@ -401,8 +401,12 @@ animation: pulse 2s infinite forwards;
   grid-template-columns: 0.5fr 1fr;
   animation: title 1s forwards;
 }
-.aboutme-img {
+.aboutme-img-desktop {
   height: 600px;
+  box-shadow: 1px 1px 10px rgba(255,255,255, 0.5);
+}
+.aboutme-img-mobile {
+  display: none;
   box-shadow: 1px 1px 10px rgba(255,255,255, 0.5);
 }
 .about-content {
@@ -429,10 +433,11 @@ animation: pulse 2s infinite forwards;
   grid-gap: 1rem;
   justify-items: center;
   animation: title 1s forwards;
+  overflow: hidden;
 }
 .resume-img {
   background-image: url('./resume-img.jpg');
-  background-position: 0 540px;
+  background-position: 0 45%;
   width: 600px;
   height: 240px;
   background-size: cover;
@@ -530,7 +535,10 @@ animation: pulse 2s infinite forwards;
   button.hamburger {
     padding: 0.5rem 0.5rem 0 0;
   }
- 
+  .resume-img {
+    height: 210px;
+    width: 100vw;
+  }
 }
 
 @media all and (max-width: 768px) {
@@ -556,9 +564,15 @@ animation: pulse 2s infinite forwards;
   .about-content {
     margin: 0;
   }
-  .aboutme-img {
-    height: 250px;
+  .aboutme-img-desktop {
+    display: none;
+  }
+  .aboutme-img-mobile {
+    display: unset;
+    width: 100vw;
+    max-width: 420px;
     margin: 0 auto;
+    justify-self: center;
   }
   .resume-main {
     display: flex;
@@ -587,9 +601,6 @@ animation: pulse 2s infinite forwards;
   }
   .resume-main h3, .contact-info h4 {
     font-size: unset;
-  }
-  .resume-img {
-    height: 200px;
   }
   .contact-icon {
     transform: scale(0.75);
