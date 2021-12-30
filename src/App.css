@@ -340,7 +340,7 @@ animation: pulse 2s infinite forwards;
 .project-list {
   color: white;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   margin: 0;
   padding: 0;
 }
@@ -386,7 +386,7 @@ animation: pulse 2s infinite forwards;
 
  }
 .repo-image {
-  height: 250px;
+  width: 100%;
   margin: 0 auto;
 }
 .repo-description {
@@ -553,13 +553,6 @@ animation: pulse 2s infinite forwards;
 
 @media all and (max-width: 768px) {
 
-  /* Portfolio */
-  .project-list {
-    grid-template-columns: 1fr;
-  }
-  .repo-image {
-    height: 145px;
-  }
   /* About */
   .about-main {
     display: grid;
