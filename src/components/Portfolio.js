@@ -28,22 +28,28 @@ return (
     </div>
    </div> 
     :
-  <ul className="project-list" style={{listStyle: "none", marginTop: "1rem"}}>
+  <ul className="project-list fade-in" style={{listStyle: "none", marginTop: "1rem"}}>
     {repos.map(repo => {
       return (
         <li key={repo.id} className="repo-card">
-          <p>{repo.name}</p>
-          <div className="repo-card-top-row">
-            <a href={repo.html_url} target="blank">SEE CODE</a>
-            <a href={repo.homepage} target="blank">VISIT SITE</a>
+          <div className="repo-image-cropper">
+           <img className="repo-image" src={`${process.env.PUBLIC_URL}/${repo.name}.png`} alt={repo.name}/>
           </div>
-          
-          <img className="repo-image" src={`${process.env.PUBLIC_URL}/${repo.name}.png`} alt={repo.name}/>
-            <p className="repo-description">{repo.description}</p>
-          <div className="repo-chip-container">
-            {repo.topics.map(topic => {
-              return (<span className="repo-chip">{topic}</span>)
-            })}
+          <div>
+           
+              <div className="repo-card-top-row">
+                <a href={repo.html_url} target="blank">SEE CODE</a>
+                <a href={repo.homepage} target="blank">VISIT SITE</a>
+              </div>
+              
+            
+              <p className="repo-description">{repo.description}</p>
+              <div className="repo-chip-container">
+                {repo.topics.map(topic => {
+                  return (<span className="repo-chip">{topic}</span>)
+                })}
+              </div>
+           
           </div>
         </li>
       )

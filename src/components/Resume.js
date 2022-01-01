@@ -8,7 +8,7 @@ import {
 const Resume = () => {
   
   return (
-  <main className="resume-main">
+  <main className="resume-main fade-in">
    <section className="resume-section resume-image-align">
       <div className="resume-img" role="img" aria-label="Michael Fares"></div>
    </section> 

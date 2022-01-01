@@ -33,7 +33,7 @@ const Home = () => {
     <>
     <main className="home-main">
        
-          <section className="title">
+          <section className="title fade-in">
             <div className="star-row">
               <div className="img-container" role="img" aria-label="Michael Fares">
             </div>

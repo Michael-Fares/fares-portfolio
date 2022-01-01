@@ -88,22 +88,23 @@ body {
 /* Home */
 .title {
   text-align: center;
-  animation-name: title;
-  -webkit-animation-name: title;
+  color: #98ded9;
+}
+.fade-in {
+  animation-name: fade-in;
+  -webkit-animation-name: fade-in;
   animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
   animation-duration: 1s;
   -webkit-animation-duration: 1s;
-  color: #98ded9;
 }
-
 .star-row {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-@keyframes title {
+@keyframes fade-in {
   from {
     opacity: 0;
   }
@@ -112,7 +113,7 @@ body {
   }
 }
 
-@-webkit-keyframes title {
+@-webkit-keyframes fade-in {
   from {
     opacity: 0;
   }
@@ -340,8 +341,8 @@ animation: pulse 2s infinite forwards;
 .project-list {
   color: white;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  margin: 0;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  margin: 0 0.5rem;
   padding: 0;
 }
 
@@ -349,24 +350,22 @@ animation: pulse 2s infinite forwards;
   margin: 0.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  padding: 1rem;
   border-radius: 10px;
-  animation-name: title;
-  -webkit-animation-name: title;
-  animation-fill-mode: forwards;
-  -webkit-animation-fill-mode: forwards;
-  animation-duration: 1s;
-  -webkit-animation-duration: 1s;
   box-shadow: 1px 1px 10px rgba(255,255,255, 0.5);
+  overflow: hidden;
+}
+.repo-details {
+  padding: 1rem;
 }
 .repo-card-top-row {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0.5rem 0;
+  margin: 1rem;
 }
+
 .repo-card-top-row > a {
  color: inherit;
  margin: 0.25rem 0.5rem;
@@ -383,17 +382,31 @@ animation: pulse 2s infinite forwards;
 .repo-card-top-row > a:hover {
   background-color: white;
   box-shadow: 0 0 3px 3px rgba(255,255,255, 0.9)
-
  }
+ .repo-card-top-row > a:active {
+  transform: scale(0.9);
+ }
+.repo-image-cropper {
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  height: 300px;
+  margin: 0;
+}
 .repo-image {
   width: 100%;
-  margin: 0 auto;
-}
-.repo-description {
-  max-width: 400px;
-  margin: 0.5rem 0;
 }
 
+.repo-description {
+  margin: 0.5rem 1rem;
+}
+.repo-chip-container {
+  padding: 0.5rem 0.5rem 1rem 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 .repo-chip {
   background-color: white;
   color: #272121;
@@ -409,7 +422,6 @@ animation: pulse 2s infinite forwards;
 .about-main {
   display: grid;
   grid-template-columns: 0.5fr 1fr;
-  animation: title 1s forwards;
 }
 .aboutme-img-desktop {
   height: 600px;
@@ -442,7 +454,6 @@ animation: pulse 2s infinite forwards;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
   justify-items: center;
-  animation: title 1s forwards;
   overflow: hidden;
 }
 .resume-img {
@@ -531,6 +542,13 @@ animation: pulse 2s infinite forwards;
   .star-row {
     flex-direction: column;  
   }
+  .project-list {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    margin: 0;
+  }
+  .repo-image-cropper {
+    height: fit-content;
+  }
   .img-container {
     height: 150px;
     width: 150px;
@@ -577,6 +595,7 @@ animation: pulse 2s infinite forwards;
     margin: 0 auto;
     justify-self: center;
   }
+  
   .resume-main {
     display: flex;
     flex-direction: column;
