@@ -4,7 +4,7 @@ import aboutme2 from '../aboutme2.jpeg'
 const About = () => {
   
   return (
-  <main className="about-main fade-in">
+  <main className="about-main slide-in">
     <div className="flex-row-wrap">
       <img className="aboutme-img-desktop" src={aboutme} alt="Michael Fares" />
       <img className="aboutme-img-mobile" src={aboutme2} alt="Michael Fares" />

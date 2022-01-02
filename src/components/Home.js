@@ -31,9 +31,9 @@ const Home = () => {
  
   return (
     <>
-    <main className="home-main">
+    <main className="home-main fade-in">
        
-          <section className="title fade-in">
+          <section className="title">
             <div className="star-row">
               <div className="img-container" role="img" aria-label="Michael Fares">
             </div>

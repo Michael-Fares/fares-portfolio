@@ -28,7 +28,7 @@ return (
     </div>
    </div> 
     :
-  <ul className="project-list fade-in" style={{listStyle: "none", marginTop: "1rem"}}>
+  <ul className="project-list slide-in" style={{listStyle: "none", marginTop: "1rem"}}>
     {repos.map(repo => {
       return (
         <li key={repo.id} className="repo-card">

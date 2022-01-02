@@ -71,7 +71,6 @@ body {
 .nav {
   background-color:#98ded9;
   box-shadow: 1px 1px 10px rgba(255,255,255, 0.5);
-  z-index: 2;
   overflow: hidden;
 }
 .nav > h1 {
@@ -91,12 +90,20 @@ body {
   color: #98ded9;
 }
 .fade-in {
-  animation-name: fade-in;
   -webkit-animation-name: fade-in;
-  animation-fill-mode: forwards;
+  animation-name: fade-in;
   -webkit-animation-fill-mode: forwards;
-  animation-duration: 1s;
+  animation-fill-mode: forwards;
   -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+.slide-in {
+  -webkit-animation-name: slide-in;
+  animation-name: slide-in;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 .star-row {
   display: flex;
@@ -119,6 +126,27 @@ body {
   }
   to { 
     opacity: 1;
+  }
+}
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(400px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(400px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 .icon-row {
