@@ -1,3 +1,7 @@
+:root {
+  --box-shadow: 0 0 5px rgba(255,255,255, 0.5);
+}
+
 html,
 body {
   margin: 0;
@@ -70,11 +74,17 @@ body {
 /* Navigation */
 .nav {
   background-color:#98ded9;
-  box-shadow: 1px 1px 10px rgba(255,255,255, 0.5);
+  box-shadow: var(--box-shadow);  
   overflow: hidden;
+
 }
-.nav > h1 {
+.nav div {
+  display: flex;
+  align-items: center;
   margin-left: 1rem;
+}
+.nav div > h1 {
+  
   color: #272121;
   text-transform: uppercase;
 }
@@ -82,6 +92,7 @@ body {
   color: #443737;
   text-transform: lowercase;
   margin-left: 0.5rem;
+  font-size: 1.4rem;
 }
 
 /* Home */
@@ -179,7 +190,7 @@ body {
   background-position: 50% 45%;
   border-radius: 10%;
   margin-right: 0.75rem;
-  box-shadow: 1px 1px 10px rgba(255,255,255, 0.5);
+  box-shadow: var(--box-shadow);
 }
 .myname {
   font-family: 'Londrina Sketch', cursive;
@@ -275,8 +286,7 @@ animation: pulse 2s infinite forwards;
   right: 0;
   border: transparent;
   background: transparent;
-  z-index: 1;
-  padding: 1rem;
+  padding: 0.75rem 1rem 0 0;
 }
 
 
@@ -319,13 +329,16 @@ animation: pulse 2s infinite forwards;
   animation: menu 0.2s forwards;
   background-color: white;
   height: fit-content;
-  box-shadow: 0 0 10px 3px rgba(255,255,255, 0.5);
+  box-shadow: var(--box-shadow);
   overflow: hidden;
   padding-bottom: 1rem;
 }
 
 .links-box {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 1.5rem;
 }
 .links-box li {
   margin: 1rem 0;
@@ -336,7 +349,7 @@ animation: pulse 2s infinite forwards;
 }
 
 .links-box li:hover {
- text-shadow: 0  5px 10px #212121;
+ letter-spacing: 0.2rem;
  color: #443737;
 }
 .links-box .last-link {
@@ -381,7 +394,7 @@ animation: pulse 2s infinite forwards;
   justify-content: flex-start;
   align-items: center;
   border-radius: 10px;
-  box-shadow: 1px 1px 10px rgba(255,255,255, 0.5);
+  box-shadow: var(--box-shadow);
   overflow: hidden;
 }
 .repo-details {
@@ -403,13 +416,12 @@ animation: pulse 2s infinite forwards;
  color: #272121;
  border-radius: 10px;
  transition: ease-in-out 0.5s all;
- box-shadow: 0 0 3px 3px rgba(255,255,255, 0.5);
+ box-shadow: var(--box-shadow);
  font-weight: bold;
 }
 
 .repo-card-top-row > a:hover {
   background-color: white;
-  box-shadow: 0 0 3px 3px rgba(255,255,255, 0.9)
  }
  .repo-card-top-row > a:active {
   transform: scale(0.9);
@@ -453,11 +465,11 @@ animation: pulse 2s infinite forwards;
 }
 .aboutme-img-desktop {
   height: 600px;
-  box-shadow: 1px 1px 10px rgba(255,255,255, 0.5);
+  box-shadow: var(--box-shadow);
 }
 .aboutme-img-mobile {
   display: none;
-  box-shadow: 1px 1px 10px rgba(255,255,255, 0.5);
+  box-shadow: var(--box-shadow);
 }
 .about-content {
   color: whitesmoke;
@@ -490,7 +502,7 @@ animation: pulse 2s infinite forwards;
   width: 600px;
   height: 240px;
   background-size: cover;
-  box-shadow: 1px 1px 10px rgba(255,255,255, 0.5);
+  box-shadow: var(--box-shadow);
 }
 .contact {
   padding-top: 1rem;

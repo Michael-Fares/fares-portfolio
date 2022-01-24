@@ -20,8 +20,8 @@ const Hamburger = () => {
       <ul className="links-box">
         <li onClick={handleClick}><Link to="/">HOME</Link></li>
         <li onClick={handleClick}><Link to="/about">ABOUT</Link></li>
-        <li onClick={handleClick}><Link to="/resume">RESUME</Link></li>
-        <li onClick={handleClick}><a href="https://michael-fares.medium.com/" target="blank">BLOG</a></li>
+        <li onClick={handleClick}><a href="https://michael-fares.github.io/resume/MichaelFaresResume.pdf" target="_blank" rel="noreferrer">RESUME</a></li>
+        <li onClick={handleClick}><a href="https://michael-fares.medium.com/" target="blank" rel="noreferrer">BLOG</a></li>
         <li className="last-link" onClick={handleClick}><Link to="/portfolio">PORTFOLIO</Link></li>
       </ul>
     </nav>

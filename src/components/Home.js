@@ -1,7 +1,6 @@
 import Animation from './Animation'
 import ProjectsLink from './ProjectsLink'
 
-import { useLocation } from 'react-router-dom'
 import React, { useState, useEffect } from 'react'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -41,16 +40,16 @@ const Home = () => {
               <h1 className="myname">Michael Fares</h1>
               <h3 className="myname-subtitle">Web Developer</h3>
               <div className="icon-row">
-                  <a href="https://www.linkedin.com/in/michael-fares-52613960/" target="blank">
+                  <a href="https://www.linkedin.com/in/michael-fares-52613960/" target="blank" rel="noreferrer">
                   <FontAwesomeIcon className="icon" icon={faLinkedin} size="3x"/>
                   </a>
-                  <a href="https://github.com/Michael-Fares" target="blank">
+                  <a href="https://github.com/Michael-Fares" target="blank" rel="noreferrer">
                   <FontAwesomeIcon className="icon" icon={faGithubSquare} size="3x"/>
                   </a>
-                  <a href="https://www.instagram.com/therealmjfares/" target="blank">
+                  <a href="https://www.instagram.com/therealmjfares/" target="blank" rel="noreferrer">
                   <FontAwesomeIcon className="icon" icon={faInstagramSquare} size="3x"/>
                   </a>
-                  <a href="https://www.youtube.com/channel/UCuWqeRDlqAj-MFiFrf3xyqg" target="blank">
+                  <a href="https://www.youtube.com/channel/UCuWqeRDlqAj-MFiFrf3xyqg" target="blank" rel="noreferrer">
                   <FontAwesomeIcon className="icon" icon={faYoutubeSquare} size="3x"/>
                   </a>
                   <a href="mailto:mjfares@gmail.com">

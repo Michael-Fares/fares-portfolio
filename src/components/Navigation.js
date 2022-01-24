@@ -7,7 +7,10 @@ const Navigation = () => {
   console.log(location)
   return (
     <nav className="nav">
-      <h1>Michael Fares <span className="pathname">{location.pathname === "/" ? "" :`> ${location.pathname.slice(1, location.pathname.length)}`}</span></h1>
+      <div>
+      <h1>Michael Fares</h1>
+      <span className="pathname">{location.pathname === "/" ? "" :`> ${location.pathname.slice(1, location.pathname.length)}`}</span>
+      </div>
       <Hamburger />
     </nav>
   )

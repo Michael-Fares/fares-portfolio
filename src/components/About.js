@@ -15,8 +15,12 @@ const About = () => {
       I am an educator turned programmer based in Houston, TX. I'm half Lebanese, half American, but fully a citizen of the world. I grew up in the Middle East for most of my childhood, and have been lucky enough to travel to many places in between here and there. 
       
       <br /> <br /> 
+
+      I love to code because to me it is the perfect blend of science and art, and gives me the chance to meaningfully solve real world problems for real world people from all walks of life.
       
-      What stimulates me most is the opportunity to engage with different people, cultures, and ideas, preferably over a strong cup of coffee. Aside from cooking good food, enjoying the outdoors, and spending quality time with family and friends, music is my number one hobby and passion. I play guitar, keyboards, and the Arabic oud. 
+      <br /> <br /> 
+      
+      What stimulates me most in work and in life is the opportunity to engage collaborate with different people, cultures, and ideas, preferably over a strong cup of coffee. Aside from cooking good food, enjoying the outdoors, and spending quality time with family and friends, music is my number one hobby and passion. I play guitar, keyboards, harmonica, and the Arabic oud. 
       
       <br /> <br />  
       
