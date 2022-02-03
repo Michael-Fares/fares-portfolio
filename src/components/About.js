@@ -20,7 +20,7 @@ const About = () => {
       
       <br /> <br /> 
       
-      What stimulates me most in work and in life is the opportunity to engage collaborate with different people, cultures, and ideas, preferably over a strong cup of coffee. Aside from cooking good food, enjoying the outdoors, and spending quality time with family and friends, music is my number one hobby and passion. I play guitar, keyboards, harmonica, and the Arabic oud. 
+      What stimulates me most in work and in life is the opportunity to engage and collaborate with different people, cultures, and ideas, preferably over a strong cup of coffee. Aside from cooking good food, enjoying the outdoors, and spending quality time with family and friends, music is my number one hobby and passion. I play guitar, keyboards, harmonica, and the Arabic oud. 
       
       <br /> <br />  
       
