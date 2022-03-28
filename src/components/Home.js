@@ -37,8 +37,11 @@ const Home = () => {
               <div className="img-container" role="img" aria-label="Michael Fares">
             </div>
             <div className="flex-column">
-              <h1 className="myname">Michael Fares</h1>
-              <h3 className="myname-subtitle">Web Developer</h3>
+              <h3 className="myname-subtitle">Hey! how's it going?</h3>
+              <div className="flex-row"> 
+                <h3>I'm</h3><h1 className="myname">Michael Fares</h1>
+              </div>
+              <h3 className="myname-subtitle">A Web Developer From Houston, TX</h3>
               <div className="icon-row">
                   <a href="https://www.linkedin.com/in/michael-fares-52613960/" target="blank" rel="noreferrer">
                   <FontAwesomeIcon className="icon" icon={faLinkedin} size="3x"/>

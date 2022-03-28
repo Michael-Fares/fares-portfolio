@@ -33,7 +33,12 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+.flex-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
 .square {
   width: 50px;
   height: 50px;
@@ -202,6 +207,7 @@ body {
 
 .myname-subtitle {
   margin: 1rem;
+  color: white;
 }
 
 .projects-link {
@@ -271,10 +277,12 @@ animation: pulse 2s infinite forwards;
   }
 }
 .home-main {
-  height: 80vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: rgb(39,33,33);
+background: linear-gradient(180deg, rgba(39,33,33,1) 0%, rgba(23,109,207,1) 68%, rgba(12,119,239,1) 76%, rgba(255,179,0,1) 100%);
 }
 
 /* Hamburger */
