@@ -33,7 +33,12 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+.flex-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
 .square {
   width: 50px;
   height: 50px;
@@ -70,6 +75,8 @@ body {
   z-index: -1;
   align-self: center;
 }
+
+
 
 /* Navigation */
 .nav {
@@ -202,6 +209,7 @@ body {
 
 .myname-subtitle {
   margin: 1rem;
+  color: white;
 }
 
 .projects-link {
@@ -270,11 +278,28 @@ animation: pulse 2s infinite forwards;
     transform: scale(1);
   }
 }
+/*gradient animation*/
+
+@keyframes gradient {
+	0% {
+		background-position: 50% 0%;
+	}
+	50% {
+		background-position: 50% 100%;
+	}
+	100% {
+		background-position: 50% 0%;
+	}
+}
 .home-main {
-  height: 80vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: rgb(39,33,33);
+background: linear-gradient(180deg, rgba(39,33,33,1) 0%, rgba(23,109,207,1) 68%, rgba(12,119,239,1) 76%, rgba(255,179,0,1) 100%);
+background-size: 300% 300%;
+	animation: gradient 15s ease infinite;
 }
 
 /* Hamburger */
